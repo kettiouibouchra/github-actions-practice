@@ -4,7 +4,7 @@ const path = require("path");
 const app = express();
 
 // Sur Azure, le port est injecté dynamiquement via process.env.PORT
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT || 3000;
 const FILE = path.join(__dirname, "counter.json");
 
 let lock = false;
